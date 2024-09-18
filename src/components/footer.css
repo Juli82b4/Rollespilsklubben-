@@ -1,0 +1,14 @@
+section  {
+    background-color: black ;
+    padding: 10px;
+}
+
+.copyright {
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content:space-around;
+list-style-type: none;
+}
+
+
