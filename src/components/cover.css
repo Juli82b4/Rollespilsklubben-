@@ -4,15 +4,22 @@
  
   width: 100%;
   height: 100vh; 
+  padding: 10px;
+  padding-top: 10%;
   display: flex;
+  flex-direction: column;
   background-image: url("../img/cover.jpg");
-  align-items: center; 
-  justify-content: center; 
+  justify-content: space-between; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Yatra One", system-ui;
   background-color: #000; 
+}
+
+.cover h1 {
+  text-align: center;
+  color: rgb(1, 44, 1);
 }
 
 .cover iframe {
