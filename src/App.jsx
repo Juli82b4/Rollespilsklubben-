@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+    <div>OPDATERING</div>
       <Header onPdfClick={toggleParentInfo} />
       <Cover />
       <Walkingman src="/src/img/" alt="Walking Man" />
