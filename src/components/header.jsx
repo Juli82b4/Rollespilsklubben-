@@ -13,20 +13,20 @@ const Header = ({ onPdfClick }) => {
   return (
     <div className="header-container">
       <header className="header">
-        <a href="#home">
-          <p>LOGO</p>
+        <a href="home">
+        <img className="logo-pic" src="./src/img/logo.png" alt="logo" />
         </a>
         <nav className="nav">
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="#1" className="nav-link" onClick={handleScroll}>
+              <a href="#1" className="header-links" onClick={handleScroll}>
                 Bliv medlem
               </a>
             </li>
           </ul>
         </nav>
         {/* Clicking this will trigger the Parentinfo popup */}
-        <a className="pdf-button" onClick={onPdfClick}>
+        <a className="header-links" onClick={onPdfClick}>
           Forældre info
         </a>
       </header>
