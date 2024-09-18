@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable no-unused-vars */
+import Rgiteact, { useState } from "react";
 import Header from "./components/Header";
 import Walkingman from "./components/Walkingman";
 import Cover from "./components/Cover";
