@@ -1,4 +1,6 @@
 import React from "react";
+import "./header.css";
+
 const Header = ({ onPdfClick, onLoginClick }) => {
   return (
     <div className="header-container">
@@ -30,5 +32,5 @@ const Header = ({ onPdfClick, onLoginClick }) => {
     </div>
   );
 };
- 
+
 export default Header;
