@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
-import "./Header.css"; // Ensure the CSS file is correctly imported
+import "./Header.css"; 
 
 const Header = ({ onPdfClick, onLoginClick }) => {
   return (
