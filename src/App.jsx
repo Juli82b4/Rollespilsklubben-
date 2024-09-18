@@ -1,17 +1,10 @@
-login
 import React, { useState } from "react";
-import Header from "./components/header";
-
-/* eslint-disable no-unused-vars */
-import Rgiteact, { useState } from "react";
-import Header from "./components/Header";
-
-main
+import Header from "./components/Header"; // Ensure correct case
 import Walkingman from "./components/Walkingman";
 import Cover from "./components/Cover";
 import Parentinfo from "./components/Parentinfo";
-import Login from "./components/login"; // Added the Login component
-import Pathway from "./components/pathway";
+import Login from "./components/Login"; // Ensure correct case
+import Pathway from "./components/Pathway"; // Ensure correct case
 import Footer from "./components/Footer";
 import "./App.css";
 
