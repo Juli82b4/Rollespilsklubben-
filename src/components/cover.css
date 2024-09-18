@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+
+.cover {
+ 
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  background-image: url("../img/cover.jpg");
+  align-items: center; 
+  justify-content: center; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Yatra One", system-ui;
+  background-color: #000; 
+}
+
+.cover iframe {
+  width: 100%;
+  height: 100%; 
+  border: none; 
+}
