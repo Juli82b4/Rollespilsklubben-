@@ -8,7 +8,7 @@ const Footer = () => {
 
 
 <div className="copyright">
-<img src="./" alt="" />
+<img src="" alt="" />
 <p>Copyright © 2023. All Rights Reserved by Rollespilsfabrikken.</p>
 </div>
    </section>

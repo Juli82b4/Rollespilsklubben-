@@ -7,22 +7,22 @@ const Header = ({ onPdfClick, onLoginClick }) => {
     <div className="header-container">
       <header className="header">
         <a href="#home">
-          <p>LOGO</p>
+          <img className="logo-pic" src="/src/img/logo.png" alt="logo" />
         </a>
         <nav className="nav">
           <ul className="nav-list">
             <li className="nav-item">
               {/* Clicking this will trigger the Login popup */}
-              <a href="#1" className="nav-link" onClick={onLoginClick}>
+              <button className="header-links" onClick={onLoginClick}>
                 Bliv medlem
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
         {/* Clicking this will trigger the Parentinfo popup */}
-        <a className="pdf-button" onClick={onPdfClick}>
+        <button className="header-links" onClick={onPdfClick}>
           Forældre info
-        </a>
+        </button>
       </header>
     </div>
   );

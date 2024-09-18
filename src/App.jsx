@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import Header from "./components/header";
 import Walkingman from "./components/Walkingman";
