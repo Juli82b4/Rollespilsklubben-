@@ -6,17 +6,13 @@
   box-sizing: border-box;
 }
 
-
- logo-branch
 .header-container {
   width: 100%;
   overflow: hidden; /* Ensure no overflow */
   position: relative; /* Ensure child elements are positioned relative to this container */
   z-index: 999999;
-
 }
 
- main
 .header {
   display: flex;
   justify-content: space-between;
@@ -49,7 +45,6 @@
 }
 
 .header-links {
-  
   text-decoration: none;
   color: rgb(255, 238, 238);
   font-weight: 800;
@@ -58,7 +53,6 @@
   padding: 20px;
   transition: color 0.3s ease, background-color 0.3s ease;
   font-family: "Poppins";
-
 }
 
 .logo-pic {
@@ -70,7 +64,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 
 .header {
   display: flex;

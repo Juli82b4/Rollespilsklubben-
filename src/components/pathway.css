@@ -1,9 +1,8 @@
 .pathway-container {
-    width: 100%;
-    height: 1000vh;
-    background-color: #20b9ff;
-    background-image: url('/src/img/new-pathway.jpg');
-    background-repeat: repeat-y; 
-    background-position: center;
-  }
-  
+  width: 100%;
+  height: 1000vh;
+  background-color: #20b9ff;
+  background-image: url("/src/img/new-pathway.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+}
