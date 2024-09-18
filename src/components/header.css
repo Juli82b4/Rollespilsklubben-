@@ -9,6 +9,7 @@
   width: 100%;
   overflow: hidden; /* Ensure no overflow */
   position: relative; /* Ensure child elements are positioned relative to this container */
+  z-index: 999999;
 }
 
 .header {
