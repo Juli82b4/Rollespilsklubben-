@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+
  
 const Footer = () => {
   return (
@@ -7,7 +8,11 @@ const Footer = () => {
 
 
 <div className="copyright">
+ login
+<img src="./" alt="" />
+
 <img src="../img/logo.png" alt="" />
+ main
 <p>Copyright © 2023. All Rights Reserved by Rollespilsfabrikken.</p>
 </div>
    </section>
