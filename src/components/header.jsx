@@ -2,14 +2,7 @@
 import React from "react";
 import "./Header.css"; // Ensure the CSS file is correctly imported
 
-const Header = ({ onPdfClick }) => {
-  const handleScroll = (event) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
-    targetElement.scrollIntoView({ behavior: "smooth" });
-  };
-
+const Header = ({ onPdfClick, onLoginClick }) => {
   return (
     <div className="header-container">
       <header className="header">
@@ -19,7 +12,8 @@ const Header = ({ onPdfClick }) => {
         <nav className="nav">
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="#1" className="nav-link" onClick={handleScroll}>
+              {/* Clicking this will trigger the Login popup */}
+              <a href="#1" className="nav-link" onClick={onLoginClick}>
                 Bliv medlem
               </a>
             </li>
