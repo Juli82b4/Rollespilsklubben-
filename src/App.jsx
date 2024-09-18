@@ -17,7 +17,7 @@ function App() {
     <>
       <Header onPdfClick={toggleParentInfo} />
       <Cover />
-      <Walkingman src="/src/img/" alt="Walking Man" />
+      <Walkingman src="/src/img/knight.png" alt="Walking Man" />
       <Pathway />
       {isParentInfoVisible && <Parentinfo onClose={toggleParentInfo} />}
     </>
