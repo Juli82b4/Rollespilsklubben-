@@ -8,6 +8,8 @@ const Header = ({ onPdfClick, onLoginClick }) => {
       <header className="header">
         <a href="#home">
           <img className="logo-pic" src="/src/img/logo.png" alt="logo" />
+        <a href="home">
+          <img className="logo-pic" src="./src/img/logo.png" alt="logo" />
         </a>
         <nav className="nav">
           <ul className="nav-list">
