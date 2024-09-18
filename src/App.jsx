@@ -19,6 +19,7 @@ function App() {
       <Cover />
       <Walkingman src="/src/img/" alt="Walking Man" />
       <Pathway />
+      <div>TEST</div>
       {isParentInfoVisible && <Parentinfo onClose={toggleParentInfo} />}
     </>
   );
