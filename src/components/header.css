@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+
+ logo-branch
+.header-container {
+  width: 100%;
+  overflow: hidden; /* Ensure no overflow */
+  position: relative; /* Ensure child elements are positioned relative to this container */
+  z-index: 999999;
+}
+
+ main
 .header {
   display: flex;
   justify-content: space-between;
