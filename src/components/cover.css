@@ -15,6 +15,8 @@
   background-size: cover;
   font-family: "Yatra One", system-ui;
   background-color: #000; 
+  z-index: 9999;
+  position: relative;
 }
 
 .cover h1 {

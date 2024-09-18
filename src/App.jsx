@@ -1,5 +1,12 @@
+login
 import React, { useState } from "react";
 import Header from "./components/header";
+
+/* eslint-disable no-unused-vars */
+import Rgiteact, { useState } from "react";
+import Header from "./components/Header";
+
+main
 import Walkingman from "./components/Walkingman";
 import Cover from "./components/Cover";
 import Parentinfo from "./components/Parentinfo";
