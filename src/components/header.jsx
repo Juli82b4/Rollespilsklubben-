@@ -6,7 +6,7 @@ const Header = ({ onPdfClick, onLoginClick }) => {
   return (
     <div className="header-container">
       <header className="header">
-        <a href="#home">
+        <a href="home"></a>
           <img className="logo-pic" src="/src/img/logo.png" alt="logo" />
         <a href="home">
           <img className="logo-pic" src="./src/img/logo.png" alt="logo" />
@@ -28,6 +28,6 @@ const Header = ({ onPdfClick, onLoginClick }) => {
       </header>
     </div>
   );
-};
+}
 
 export default Header;
