@@ -1,47 +1,46 @@
-.section  {
-    background-color: #260933;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #260933;
-    z-index: 9999;
-    padding-bottom: 20px;
+.section {
+  background-color: #260933;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #260933;
+  z-index: 9999;
+  padding-bottom: 20px;
 }
 
 .copyright {
-display: flex;
-flex-direction: column;
-text-align: center;
-justify-content:space-around;
-list-style-type: none;
-align-items: center;
-background-color: #260933;
-z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+  background-color: #260933;
+  z-index: 9999;
 }
 
 img {
-    width: 50px;
+  width: 50px;
 }
 
 .logo-pic {
-    height: 90px;
-    width: 90px;
-    background-color: white;
-    border-radius: 50px;
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
 
-  .icons {
-    display: flex;
-    justify-content: space-between;
-    gap:  15px   ;
-    margin-top: 10px;
-      }
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+}
 
-  .icons img{
-width: 20px;
-  }
-  
+.icons img {
+  width: 20px;
+}
