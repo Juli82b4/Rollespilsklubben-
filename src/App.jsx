@@ -4,7 +4,7 @@ import Walkingman from "./components/Walkingman";
 import Cover from "./components/Cover";
 import Parentinfo from "./components/Parentinfo";
 import Login from "./components/Login"; // Ensure correct case
-import Pathway from "./components/Pathway"; // Ensure correct case
+import Pathway from "./components/pathway"; // Ensure correct case
 import Footer from "./components/Footer";
 import "./App.css";
  

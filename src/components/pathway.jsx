@@ -5,12 +5,24 @@ const Pathway = () => {
   return (
     <div className="pathway-container">
       <div className="signboard">
-        <div className="signboard-one"> </div>
-        <div className="signboard-two"></div>
-        <div className="signboard-three"> </div>
-        <div className="signboard-four"> </div>
+
+        <a href="./c">
+          <div className="signboard-one" />
+        </a>
+
+        <a href="" src="www.google.com">
+          <d className="signboard-two" />
+        </a>
+
+        <a href="" src="www.google.com">
+          <div className="signboard-three" />
+        </a>
+
+        <a href="" src="www.google.com">
+          <div className="signboard-four" />
+        </a>
+
       </div>
-      ;
     </div>
   );
 };
