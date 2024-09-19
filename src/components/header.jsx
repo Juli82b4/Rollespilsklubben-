@@ -14,7 +14,7 @@ const Header = ({ onPdfClick, onLoginClick }) => {
           <ul className="nav-list">
             <li className="nav-item">
               {/* Clicking this will trigger the Login popup */}
-              <a href="#1" className="nav-link" onClick={onLoginClick}>
+              <a href="#1" className="header-links" onClick={onLoginClick}>
                 Login
               </a>
             </li>
