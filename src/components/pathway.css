@@ -26,7 +26,7 @@
 }
 
 .signboard-one {
-  background-image: url("./src/img/signboard.png");
+  background-image: url("./src/img/events.png");
   height: 300px;
   width: 300px;
   background-size: cover;
@@ -39,7 +39,7 @@
 
 
 .signboard-two {
-  background-image: url("./src/img/signboard.png");
+  background-image: url("./src/img/nyheder.png");
   height: 300px;
   width: 300px;
   background-size: cover;
@@ -52,7 +52,7 @@
 }
 
 .signboard-three {
-  background-image: url("./src/img/signboard.png");
+  background-image: url("./src/img/kontakt.png");
   height: 300px;
   width: 300px;
   background-size: cover;
@@ -64,7 +64,7 @@
 }
 
 .signboard-four {
-  background-image: url("./src/img/signboard.png");
+  background-image: url("./src/img/galleri.png");
   height: 300px;
   width: 300px;
   background-size: cover;
