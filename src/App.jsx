@@ -5,8 +5,8 @@ import Cover from "./components/Cover";
 import Info from "./components/info"; // Correct component import
 import Parentinfo from "./components/Parentinfo";
 import Login from "./components/Login"; // Ensure correct case
-import Pathway from "./components/Pathway"; // Ensure correct case
 import Footer from "./components/footer";
+import Pathway from "./components/pathway"; // Ensure correct case
 import "./App.css";
 
 function App() {
