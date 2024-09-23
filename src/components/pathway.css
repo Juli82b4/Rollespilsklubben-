@@ -1,0 +1,91 @@
+/* pathway.css */
+.pathway-container {
+  width: 100%;
+  height: 1000vh;
+  background-color: #20b9ff;
+  background-image: url("/src/img/new-pathway.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  position: relative; /* Ensure the overlay is positioned correctly */
+}
+
+/* Black gradient shadow at the top */
+.pathway-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust the height of the gradient shadow as needed */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1; /* Ensure it appears above the background */
+  pointer-events: none; /* Ensures the gradient does not block interactions */
+}
+
+.cs {
+  position: relative;
+  width: 150px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  left: 690px;
+  top: 190px;
+}
+
+.signboard-one {
+  width: 200px;
+  height: 200px;
+}
+.signboard {
+  left: 20%;
+}
+
+.signboard-one {
+  background-image: url("./src/img/events.png");
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 32%;
+  top: 564em;  
+}
+
+
+.signboard-two {
+  background-image: url("./src/img/nyheder.png");
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position:relative;
+  left: 54%;
+  top:87em;
+  
+}
+
+.signboard-three {
+  background-image: url("./src/img/kontakt.png");
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 31%;
+  top: 55em;
+}
+
+.signboard-four {
+  background-image: url("./src/img/galleri.png");
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 55%;
+  top: 191em;
+}
