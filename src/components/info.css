@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
 
 .info {
-    position: static;
    text-align: center;
    padding: 2em 15em;
    z-index: 9999;
@@ -10,6 +9,7 @@
    font-family: "Yatra One", system-ui;
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
    background-color: #20b9ff;
+ 
 
 
 }
@@ -28,4 +28,5 @@ border-radius: 2em;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 border: 1px solid black;
 margin-top: 20px;
+text-decoration: none;
 }
