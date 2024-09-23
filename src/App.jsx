@@ -1,48 +1,61 @@
 import React, { useState } from "react";
-import Header from "./components/Header"; // Ensure correct case
-import Walkingman from "./components/Walkingman";
-import Cover from "./components/Cover";
-import Info from "./components/info"; // Correct component import
-import Parentinfo from "./components/Parentinfo";
-import Login from "./components/Login"; // Ensure correct case
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Component imports
+import Header from "./components/header"; 
+import Walkingman from "./components/walkingman";
+import Cover from "./components/cover";
+import Info from "./components/info";
+import Parentinfo from "./components/parentinfo";
+import Login from "./components/login"; 
 import Footer from "./components/footer";
-import Pathway from "./components/pathway"; // Ensure correct case
-import "./App.css";
+import Pathway from "./components/pathway";
+
+// Page imports
+import Events from "./pages/events";
+import Galleri from "./pages/galleri";
+import Kontakt from "./pages/kontakt";
+import Nyheder from "./pages/nyheder";
 
 function App() {
-  const [isParentInfoVisible, setParentInfoVisible] = useState(false);
-  const [isLoginVisible, setLoginVisible] = useState(false); // Added state for Login popup
 
-  // Toggle Parentinfo popup
+  const [isParentInfoVisible, setParentInfoVisible] = useState(false);
+  const [isLoginVisible, setLoginVisible] = useState(false);
+
   const toggleParentInfo = () => {
     setParentInfoVisible(!isParentInfoVisible);
   };
 
-  // Toggle Login popup
+
+
   const toggleLogin = () => {
     setLoginVisible(!isLoginVisible);
   };
 
+  
+
   return (
-    <>
-      {/* Pass both toggle functions to Header */}
-      <Header onPdfClick={toggleParentInfo} onLoginClick={toggleLogin} />
-      <Cover />
-      
-      {/* Pass toggleLogin to Info component */}
-      <Info onLoginClick={toggleLogin} />
+    <Router>
+      <>
+        <Header onPdfClick={toggleParentInfo} onLoginClick={toggleLogin} />
+        <Cover />
+        <Info onLoginClick={toggleLogin} />
+        <Walkingman src="/src/img/knight.png" alt="Walking Man" />
 
-      <Walkingman src="/src/img/knight.png" alt="Walking Man" />
-      <Pathway />
+        <Routes>
+          <Route path="/" element={<Pathway />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/galleri" element={<Galleri />} />
+          <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/nyheder" element={<Nyheder />} />
+        </Routes>
 
-      {/* Render Parentinfo popup */}
-      {isParentInfoVisible && <Parentinfo onClose={toggleParentInfo} />}
+        {isParentInfoVisible && <Parentinfo onClose={toggleParentInfo} />}
+        {isLoginVisible && <Login onClose={toggleLogin} />}
 
-      {/* Render Login popup */}
-      {isLoginVisible && <Login onClose={toggleLogin} />}
-
-      <Footer />
-    </>
+        <Footer />
+      </>
+    </Router>
   );
 }
 
