@@ -12,7 +12,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Yatra One", system-ui;
-  background-color: #000;
   z-index: 9999;
   position: relative;
 }
@@ -21,6 +20,7 @@
   text-align: center;
   font-size: 4em;
   color: rgb(88, 5, 123);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .cover h2 {

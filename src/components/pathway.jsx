@@ -3,6 +3,9 @@ import "./pathway.css";
 
 const Pathway = () => {
   return (
+
+    <div className="pathway-container">
+
     <div className="pathway-container">
       <div className="signboard">
 
@@ -24,6 +27,7 @@ const Pathway = () => {
 
       </div>
     </div>
+     </div>
   );
 };
 

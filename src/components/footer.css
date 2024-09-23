@@ -1,13 +1,14 @@
-.section {
-  background-color: #260933;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #260933;
-  z-index: 9999;
-  padding-bottom: 20px;
-}
+
+.section  {
+    background-color: #260933;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #260933;
+ 
+    padding-bottom: 20px;
+
 
 .copyright {
   display: flex;
