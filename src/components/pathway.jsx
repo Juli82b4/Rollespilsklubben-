@@ -1,33 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./pathway.css";
 
 const Pathway = () => {
   return (
-
-    <div className="pathway-container">
-
     <div className="pathway-container">
       <div className="signboard">
-
-        <a href="./c">
+        <Link to="/events">
           <div className="signboard-one" />
-        </a>
+        </Link>
 
-        <a href="" src="www.google.com">
-          <d className="signboard-two" />
-        </a>
+        <Link to="/galleri">
+          <div className="signboard-two" />
+        </Link>
 
-        <a href="" src="www.google.com">
+        <Link to="/kontakt">
           <div className="signboard-three" />
-        </a>
+        </Link>
 
-        <a href="" src="www.google.com">
+        <Link to="/nyheder">
           <div className="signboard-four" />
-        </a>
-
+        </Link>
       </div>
     </div>
-     </div>
   );
 };
 
