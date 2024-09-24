@@ -1,25 +1,52 @@
-/* pathway.css */
 .pathway-container {
-  width: 100%;
-  height: 1000vh;
-  background-color: #20b9ff;
+  width: 80%;
+  height:1000vh;
   background-image: url("/src/img/new-pathway.jpg");
   background-repeat: repeat-y;
   background-position: center;
-  position: relative; /* Ensure the overlay is positioned correctly */
+  position: relative;
+  margin: 0 auto;
+  
+
+
+}
+
+.container-background {
+  position: relative;
+  width: 100%;
+  height: 1000vh;
+  background-repeat: repeat-y;
+  background-position: center;
+  background: linear-gradient(#20b9ff, rgba(44, 51, 153, 0.5)),
+    url("/src/img/water.jpeg");
+  background-size: 200% 200%;
+  animation: backgroundAnimation 30s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 /* Black gradient shadow at the top */
-.pathway-container::before {
+.container-background::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px; /* Adjust the height of the gradient shadow as needed */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-  z-index: 1; /* Ensure it appears above the background */
-  pointer-events: none; /* Ensures the gradient does not block interactions */
+  height: 100px; 
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1; 
+  pointer-events: none; 
 }
 
 .cs {
@@ -48,10 +75,9 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  left: 32%;
-  top: 564em;  
+  left: 25%;
+  top: 282em;
 }
-
 
 .signboard-two {
   background-image: url("./src/img/nyheder.png");
@@ -60,10 +86,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position:relative;
+  position: relative;
   left: 54%;
-  top:87em;
-  
+  top: 87em;
 }
 
 .signboard-three {

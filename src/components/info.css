@@ -1,33 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
 
 .info {
-   text-align: center;
-   padding: 2em 15em;
-   z-index: 9999;
-   position: relative;
-   color: white;
-   font-family: "Yatra One", system-ui;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-   background-color: #20b9ff;
 
-
+  text-align: center;
+  padding: 2em 15em;
+  z-index: 9999;
+  position: relative;
+  color: white;
+  font-family: "Yatra One", system-ui;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: #20b9ff;
+  transition: color 0.3s ease;
 }
 
 
+.info h1 {
+  color: rgb(88, 5, 123);
+}
+
+.signup {
+  background-color: rgb(88, 5, 123);
+  color: white;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(254, 254, 254);
+  margin-top: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.signup:hover {
+  background-color: rgb(74, 94, 172);
+  transform: scale(1.05);
 
 
 .info h1{
     color:rgb(88, 5, 123) ;
+
 }
 
-.signup {
-background-color: rgb(88, 5, 123) ;
-color: white;
-display: inline-block;
-padding: 1em;
-border-radius: 2em;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-border: 1px solid black;
-margin-top: 20px;
-text-decoration: none;
+.signup:active {
+  transform: scale(0.95);
 }
