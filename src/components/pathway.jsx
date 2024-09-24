@@ -4,6 +4,7 @@ import "./pathway.css";
 
 const Pathway = () => {
   return (
+    <div className="container-background">
     <div className="pathway-container">
       <div className="signboard">
         <Link to="/events">
@@ -22,6 +23,7 @@ const Pathway = () => {
           <div className="signboard-four" />
         </Link>
       </div>
+    </div>
     </div>
   );
 };

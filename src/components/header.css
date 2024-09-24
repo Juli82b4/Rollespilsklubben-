@@ -60,11 +60,17 @@
   height: 90px;
   width: 90px;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 50%;
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease; 
 }
+
+.logo-pic:hover {
+  transform: translateY(-10px); 
+}
+
 
 .header {
   display: flex;

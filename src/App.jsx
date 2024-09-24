@@ -33,7 +33,6 @@ function App() {
   };
 
   
-
   return (
     <Router>
       <>
@@ -52,6 +51,8 @@ function App() {
 
         {isParentInfoVisible && <Parentinfo onClose={toggleParentInfo} />}
         {isLoginVisible && <Login onClose={toggleLogin} />}
+
+         
 
         <Footer />
       </>
