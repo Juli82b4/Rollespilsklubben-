@@ -17,7 +17,7 @@
   height: 1000vh;
   background-repeat: repeat-y;
   background-position: center;
-  background: linear-gradient(#20b9ff, rgba(44, 51, 153, 0.5)),
+  background: linear-gradient(#24aeeeff, rgba(44, 51, 153, 0.5)),
     url("/src/img/water.jpeg");
   background-size: 200% 200%;
   animation: backgroundAnimation 30s linear infinite;
