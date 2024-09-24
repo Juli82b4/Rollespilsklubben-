@@ -7,7 +7,7 @@ const Header = ({ onPdfClick, onLoginClick }) => {
   return (
     <div className="header-container">
       <header className="header">
-        <a href="home">
+        <a href="/">
           <img className="logo-pic" src="./src/img/logo.png" alt="logo" />
         </a>
         <nav className="nav">

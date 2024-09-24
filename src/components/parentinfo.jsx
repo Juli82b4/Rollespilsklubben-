@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Parentinfo.css";
 
 const Parentinfo = ({ onClose }) => {
+  const navigate = useNavigate();
+
+  const handleAccept = () => {
+    onClose();
+    navigate("/member-info");
+  };
+
   return (
     <div className="parent-popup-overlay" onClick={onClose}>
       <div className="parent-popup" onClick={(e) => e.stopPropagation()}>
@@ -10,8 +18,7 @@ const Parentinfo = ({ onClose }) => {
           Rollespils klubben er kun tilegnet folk over 18 år eller som er
           ledsaget af en forældrer.
         </p>
-        {/* Close button inside the popup */}
-        <button className="close-popup-btn" onClick={onClose}>
+        <button className="close-popup-btn" onClick={handleAccept}>
           Accepter
         </button>
       </div>

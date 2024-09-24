@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Component imports
-import Header from "./components/header"; 
+import Header from "./components/header";
 import Walkingman from "./components/walkingman";
 import Cover from "./components/cover";
 import Info from "./components/info";
 import Parentinfo from "./components/parentinfo";
-import Login from "./components/login"; 
+import Login from "./components/login";
 import Footer from "./components/footer";
 import Pathway from "./components/pathway";
 
@@ -16,30 +16,28 @@ import Events from "./pages/events";
 import Galleri from "./pages/galleri";
 import Kontakt from "./pages/kontakt";
 import Nyheder from "./pages/nyheder";
+import MemberInfo from "./pages/memberInfo";
 
 function App() {
-
   const [isParentInfoVisible, setParentInfoVisible] = useState(false);
   const [isLoginVisible, setLoginVisible] = useState(false);
+  const isRootPage = window.location.pathname === "/" || window.location.pathname === "";
 
   const toggleParentInfo = () => {
     setParentInfoVisible(!isParentInfoVisible);
   };
 
-
-
   const toggleLogin = () => {
     setLoginVisible(!isLoginVisible);
   };
 
-  
   return (
     <Router>
       <>
         <Header onPdfClick={toggleParentInfo} onLoginClick={toggleLogin} />
-        <Cover />
-        <Info onLoginClick={toggleLogin} />
-        <Walkingman src="/src/img/knight.png" alt="Walking Man" />
+        {isRootPage && <Cover />}
+        {isRootPage && <Info onLoginClick={toggleLogin} />}
+        {isRootPage && <Walkingman src="/src/img/knight.png" alt="Walking Man" />}
 
         <Routes>
           <Route path="/" element={<Pathway />} />
@@ -47,12 +45,11 @@ function App() {
           <Route path="/galleri" element={<Galleri />} />
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/nyheder" element={<Nyheder />} />
+          <Route path="/member-info" element={<MemberInfo />} />
         </Routes>
 
         {isParentInfoVisible && <Parentinfo onClose={toggleParentInfo} />}
         {isLoginVisible && <Login onClose={toggleLogin} />}
-
-         
 
         <Footer />
       </>
