@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./pathway.css";
@@ -11,7 +12,7 @@ const Pathway = () => {
           <div className="signboard-one" />
         </Link>
 
-        <Link to="/galleri">
+        <Link to="/nyheder">
           <div className="signboard-two" />
         </Link>
 
@@ -19,7 +20,7 @@ const Pathway = () => {
           <div className="signboard-three" />
         </Link>
 
-        <Link to="/nyheder">
+        <Link to="/galleri">
           <div className="signboard-four" />
         </Link>
       </div>
