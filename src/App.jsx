@@ -17,6 +17,7 @@ import Galleri from "./pages/galleri";
 import Kontakt from "./pages/kontakt";
 import Nyheder from "./pages/nyheder";
 import MemberInfo from "./pages/memberInfo";
+import ParentsInfo from "./pages/parentsinfo";
 
 function App() {
   const [isParentInfoVisible, setParentInfoVisible] = useState(false);
@@ -46,6 +47,7 @@ function App() {
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/nyheder" element={<Nyheder />} />
           <Route path="/member-info" element={<MemberInfo />} />
+          <Route path="/parents-info" element={<ParentsInfo />} />
         </Routes>
 
         {isParentInfoVisible && <Parentinfo onClose={toggleParentInfo} />}

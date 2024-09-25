@@ -7,7 +7,7 @@ const Parentinfo = ({ onClose }) => {
 
   const handleAccept = () => {
     onClose();
-    navigate("/member-info");
+    navigate("/parents-info");
   };
 
   return (
