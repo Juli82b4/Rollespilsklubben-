@@ -39,7 +39,7 @@ function App() {
         <Header onPdfClick={toggleParentInfo} onLoginClick={toggleLogin} />
         {isRootPage && <Cover />}
         {isRootPage && <Info onLoginClick={toggleLogin} />}
-        {isRootPage && <Walkingman src="/src/img/walkingman.png" alt="Walking Man" />}
+        {isRootPage && <Walkingman />}
 
         <Routes>
           <Route path="/" element={<Pathway />} />
