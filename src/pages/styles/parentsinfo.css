@@ -1,2 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
+.parents-whole-container {
+  background: linear-gradient(#24aeeeff, rgba(44, 51, 153, 0.5)),
+    url("/src/img/water.jpeg");
+  background-size: 200% 200%;
+  animation: backgroundAnimation 70s linear infinite;
+}
+
+.parentsinfo-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgb(49, 167, 221);
+  background-size: 200% 200%;
+  animation: backgroundAnimation 700s linear infinite;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.parentsinfo-container h1,
+h2 {
+  color: #051e37;
+  position: relative;
+}
+
+.parentsinfo-container h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.parentsinfo-containerh2 {
+  font-size: 1.4em;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #280231;
+  display: inline-block;
+}
+
+.parentsinfo-container h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 4px;
+  background-color: #3498db;
+  transition: width 0.4s ease-in-out;
+}
+
+.parentsinfo-container h2:hover::after {
+  width: 100%;
+}
+
+.parentsinfo-container p {
+  color: #1d1212;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+  animation: fadeIn 1.2s ease-in-out;
+}
