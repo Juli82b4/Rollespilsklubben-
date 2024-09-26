@@ -1,9 +1,17 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 const Login = ({ onClose }) => {
+  const navigate = useNavigate();
+
+  const handleAccept = () => {
+    onClose();
+    navigate("/login");
+  };
+
   return (
     <div className="login-popup-overlay" onClick={onClose}>
       <div className="login-popup" onClick={(e) => e.stopPropagation()}>
@@ -11,7 +19,11 @@ const Login = ({ onClose }) => {
         <div className="login-content">
           <div className="login-option">
             <p>Har du allerede en konto?</p>
-            <button className="login-btn">Log ind</button>
+        
+            <button className="login-btn" onClick={handleAccept}>
+              Log ind
+            </button>
+           
           </div>
           <div className="signup-option">
             <p>Har du ikke en konto endnu?</p>

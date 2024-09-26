@@ -18,6 +18,7 @@ import Kontakt from "./pages/kontakt";
 import Nyheder from "./pages/nyheder";
 import MemberInfo from "./pages/memberInfo";
 import ParentsInfo from "./pages/parentsinfo";
+import Loginpage from "./pages/login";
 
 function App() {
   const [isParentInfoVisible, setParentInfoVisible] = useState(false);
@@ -42,6 +43,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Pathway />} />
+          <Route path="/login" element={<Loginpage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/galleri" element={<Galleri />} />
           <Route path="/kontakt" element={<Kontakt />} />
