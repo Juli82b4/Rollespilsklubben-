@@ -3,6 +3,7 @@ import "./styles/parentsinfo.css";
 
 const ParentsInfo = () => {
   return (
+    <div className="parents-whole-container">
     <div class="parentsinfo-container">
       <h1>Forældreinfo</h1>
       <p>
@@ -29,14 +30,14 @@ const ParentsInfo = () => {
       <h2>Facebookgruppe:</h2>
       Efterhånden har vi mange forældre, der har været med i nogle år og som
       ofte giver en hånd med det praktiske og som sørger for kaffe og kakao til
-      gamle sjæle i skoven. Entusiastiske forældre mødes på facebookgruppen:
-      <h2>Excalibur afviklere, forældre og kreative hjælpere</h2>
+      gamle sjæle i skoven. Entusiastiske forældre mødes på facebookgruppen: <br /> <br />
+      <h2>Excalibur afviklere, forældre og kreative hjælpere</h2> <br /> <br /> <br />
       <h1>Ingen mødepligt:</h1>
       <p>
         Når man deltager til Rollespil er man ikke forpligtet til at møde op til
-        samtlige spildage. Alle er velkomne – også bare for en enkelt gang.
+        samtlige spildage. Alle er velkomne – også bare for en enkelt gang. <br /> <br />
       </p>
-      <h2>Vind og vejr:</h2>
+      <h2>Vind og vejr:</h2> <br /> <br />
       <h2>
         Man kan spille rollespil i al slags vejr og vi lader ikke en smule
         sneVind og vejr:
@@ -66,6 +67,7 @@ const ParentsInfo = () => {
         få fat på forældre eller værge, hvis der skulle opstå en situation, hvor
         dette er nødvendigt.
       </p>
+    </div>
     </div>
   );
 };
