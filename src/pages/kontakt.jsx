@@ -1,9 +1,53 @@
-import React from 'react'
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-unused-vars */
+import React from "react";
+import "./styles/kontakt.css"; // Import the CSS file for styling
 
 const Kontakt = () => {
   return (
-    <div>kontakt</div>
-  )
-}
+    <div className="contact-container">
+      <h1>Kontakt os</h1>
+      <br />
+      <p>
+        Hvis du har spørgsmål eller har brug for yderligere information, er du
+        altid velkommen til at kontakte os. Vi ser frem til at høre fra dig!
+      </p>
+
+      <div className="contact-info">
+        <br />
+        <h2>Kontaktinformation</h2>
+        <br />
+        <p>
+          <strong>Adresse:</strong> Rollespilsklubben Excalibur, Kirkebækvej
+          123, 8800 Viborg
+        </p>
+        <p>
+          <strong>Telefon:</strong> +45 12 34 56 78
+        </p>
+        <p>
+          <strong>Email:</strong> info@excalibur.dk
+        </p>
+      </div>
+
+      <div className="contact-form">
+        <br />
+        <h2>Send os en besked</h2>
+        <br />
+        <form>
+          <label for="name">Navn:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Besked:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  );
+};
 
 export default Kontakt;
