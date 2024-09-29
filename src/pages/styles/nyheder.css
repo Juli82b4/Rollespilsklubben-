@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+
+h1 {
+    background-image: url(/src/img/gallery\ img/background-image);
+}
+
+.banner {
+color: white;
+padding: 8em;
+text-align: center;
+ background-image: url(/src/img/forest-background.png);
+ 
+
+}
+
+.banner h1 {
+    color: black;
+    font-weight: bold;
+    font-family: "Yatra One", system-ui;
+    font-size: xx-large;
+    
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+        gap: 1em; /* Adds some space between the grid items */
+      }
+      
+      .grid-item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        background-color: #f5f5f5; /* Optional: Adds a background to grid items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
+  border-radius: 10px; /* Optional: rounded corners for a smoother look */
+  transition: transform 0.3s ease-in-out; /* Adds animation for a hover effect */
+      }
+      
+      
+      .grid-item img{
+        width: 100%;
+        
+        margin-bottom: 10px;
+      }
+
+h3, h5, p {
+
+    padding: 1em;
+}
+
