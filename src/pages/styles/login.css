@@ -12,9 +12,9 @@ body {
     border: 2px solid black; /* Border around the container */
     margin: 30px auto; /* Center the container with auto margins */
     text-align: center; /* Center text within the container */
-    height: 400px; /* Fixed height for the container */
+    height: 430px; /* Fixed height for the container */
     width: 25%; /* Width of the container */
-    padding: 2em; /* Padding inside the container */
+    padding: 1.5em; /* Padding inside the container */
     background-color: #260933; /* Background color of the container */
     border-radius: 10px; /* Smooth rounded corners */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2); /* Permanent shadow effect */
@@ -44,7 +44,7 @@ label {
 /* Input Styles */
 input {
     width: 100%; /* Full width for inputs */
-    padding: 0.8em; /* Padding inside inputs */
+    padding: 0.6em; /* Padding inside inputs */
     margin-bottom: 1em; /* Margin below inputs */
     border: 1px solid #ccc; /* Border style for inputs */
     border-radius: 5px; /* Rounded corners for inputs */
@@ -79,4 +79,5 @@ input {
     color: #007BFF; /* Link color */
     cursor: pointer; /* Pointer cursor for link */
     text-decoration: underline; /* Underline for link */
+  
 }
