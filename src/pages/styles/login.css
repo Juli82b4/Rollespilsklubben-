@@ -1,20 +1,88 @@
-h1 {
-
-}
-
+/* Body Styles */
 body {
-  
+    background-image: url(/src/img/viking.jpg); /* Background image for the entire page */
+    background-size: cover; /* Ensures the background covers the entire screen */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    margin: 0; /* Remove default body margin */
 }
 
-
+/* Login Container Styles */
 .login-container {
-    border: 2px solid black;
-    margin: 5px;
-    text-align: center;
-    height: 400px;
-    width: 25%;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
+    color: white; /* Text color */
+    border: 2px solid black; /* Border around the container */
+    margin: 30px auto; /* Center the container with auto margins */
+    text-align: center; /* Center text within the container */
+    height: 410px; /* Fixed height for the container */
+    width: 25%; /* Width of the container */
+    padding: 1.5em; /* Padding inside the container */
+    padding-bottom: 20px; /* Add bottom padding */
+    background-color: #260933; /* Background color of the container */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2); /* Permanent shadow effect */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Distribute space between elements */
+}
 
+/* Heading Styles */
+h1 {
+    color: white; /* Heading color */
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 1em; /* Margin below the heading */
+}
+
+/* Input Group Styles */
+.input-group {
+    margin-bottom: 1em; /* Margin below each input group */
+}
+
+/* Label Styles */
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 0.5em; /* Margin below each label */
+}
+
+/* Input Styles */
+input {
+    width: 100%; /* Full width for inputs */
+    padding: 0.5em; /* Padding inside inputs */
+    margin-bottom: 1em; /* Margin below inputs */
+    border: 1px solid #ccc; /* Border style for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+}
+
+/* Submit Button Styles */
+.submit-btn {
+    width: 100%; /* Full width for the submit button */
+    padding: 0.8em; /* Padding inside the button */
+    background-color: #4CAF50; /* Background color for the button */
+    color: white; /* Text color for the button */
+    border: none; /* No border for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 16px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Submit Button Hover Effect */
+.submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Signup Option Styles */
+.signup-option {
+    text-align: center; /* Centering the signup option text */
+    margin-top: 1em; /* Margin above the signup option text */
+}
+
+/* Adjust the paragraph margin */
+.signup-option p {
+    margin-bottom: 20px; /* Add bottom margin here for more space */
+}
+
+/* Toggle Link Styles */
+.toggle-link {
+    color: #007BFF; /* Link color */
+    cursor: pointer; /* Pointer cursor for link */
+    text-decoration: underline; /* Underline for link */
 }

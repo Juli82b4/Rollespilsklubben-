@@ -7,9 +7,14 @@ import "./Login.css";
 const Login = ({ onClose }) => {
   const navigate = useNavigate();
 
-  const handleAccept = () => {
-    onClose();
-    navigate("/login");
+  const handleLogin = () => {
+    onClose(); // Close the popup
+    navigate("/login"); // Navigate to the login page
+  };
+
+  const handleSignUp = () => {
+    onClose(); // Close the popup
+    navigate("/login"); // Navigate to the login page
   };
 
   return (
@@ -19,15 +24,15 @@ const Login = ({ onClose }) => {
         <div className="login-content">
           <div className="login-option">
             <p>Har du allerede en konto?</p>
-        
-            <button className="login-btn" onClick={handleAccept}>
+            <button className="login-btn" onClick={handleLogin}>
               Log ind
             </button>
-           
           </div>
           <div className="signup-option">
             <p>Har du ikke en konto endnu?</p>
-            <button className="signup-btn">Opret konto</button>
+            <button className="signup-btn" onClick={handleSignUp}>
+              Opret konto
+            </button>
           </div>
         </div>
         {/* Close button inside the popup */}
