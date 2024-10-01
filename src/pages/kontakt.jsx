@@ -5,6 +5,10 @@ import "./styles/kontakt.css"; // Import the CSS file for styling
 
 const Kontakt = () => {
   return (
+     <div className="gallery-whole-container">
+      <div className="banner">
+        <h1>KONTAKT</h1>
+      </div>
     <div className="contact-container">
       <h1>Kontakt os</h1>
       <br />
@@ -46,6 +50,7 @@ const Kontakt = () => {
           <button type="submit">Send</button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

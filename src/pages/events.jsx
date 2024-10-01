@@ -5,6 +5,11 @@ import "./styles/events.css"; // Import the CSS file for styling
 const Events = () => {
   return (
     <div className="events-whole-container">
+
+ <div className="banner">
+        <h1>ARRANGMENTER</h1>
+      </div>
+
     <div className="events-container">
       <h1>Arrangementer i Undallslund</h1>
       <p>

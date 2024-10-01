@@ -1,8 +1,13 @@
-body {
+.kontakt-whole-container {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  background: linear-gradient(#24aeeeff, rgba(97, 202, 212, 0.5)),
+  url("/src/img/water.jpeg");
+background-size: 200% 200%;
+animation: backgroundAnimation 70s linear infinite;
+padding: 40px 40px;
 }
 
 .contact-container {
