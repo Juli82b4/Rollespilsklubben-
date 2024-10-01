@@ -22,7 +22,7 @@ const Nyheder = () => {
         </div>
         <div className="grid-item">
           <img src="/src/img/poster.jpg" alt="" />
-          <h3>PLAKATKONKURRENCE ROLLESPIL 2025</h3>
+          <h3>Rollespil  Plakatkonkurrence 2025</h3>
           <p>on 9. september 2024</p>
           <h5>
             PLAKATKONKURRENCE NITRICON 2025. Vind 500kr, 2 fribiletter til

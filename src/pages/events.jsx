@@ -12,12 +12,12 @@ const Events = () => {
 
     <div className="events-container">
       <h1>Arrangementer i Undallslund</h1>
-      <p>
+      <p><b>
         Vi spiller i forårssæsonen og efterårssæsonen. Forårssæsonen går typisk
         fra starten af marts til sommerferien, og efterårssæsonen går fra
         sommerferien slutter til det bliver for koldt en gang i november. Vi
         spiller søndage i lige uger – datoer finder du herunder.
-      </p>
+        </b></p>
 
       <h2>2025:</h2>
       <ul className="event-dates">
@@ -31,7 +31,7 @@ const Events = () => {
         <li>lørdag d. 28. juni (fælles afslutning)</li>
       </ul>
 
-      <div className="grid">
+      <div className="events-grid">
         <div className="grid-item">
           <h2>Tid og sted</h2>
           <p>
