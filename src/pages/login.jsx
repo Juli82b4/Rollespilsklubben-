@@ -10,35 +10,33 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h1>{isSignUp ? 'Sign Up' : 'Sign In'}</h1>
+      <h1>{isSignUp ? 'Opret konto' : 'Log ind'}</h1>
       <form>
         <div className="input-group">
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" required />
+          <input type="email" id="email" placeholder="Indtast din email" required />
         </div>
 
         <div className="input-group">
-          <label htmlFor="password">{isSignUp ? 'Create Password' : 'Password'}</label>
+          <label htmlFor="password">{isSignUp ? 'Opret adgangskode' : 'Adgangskode'}</label>
           <input
             type="password"
             id="password"
-            placeholder={isSignUp ? 'Create a password' : 'Enter your password'}
+            placeholder={isSignUp ? 'Opret en adgangskode' : 'Indtast din adgangskode'}
             required
           />
         </div>
 
-        {/* Removed the Confirm Password field */}
-        
         <button type="submit" className="submit-btn">
-          {isSignUp ? 'Sign Up' : 'Sign In'}
+          {isSignUp ? 'Opret konto' : 'Log ind'}
         </button>
       </form>
 
       <div className="signup-option">
         <p>
-          {isSignUp ? 'Already have an account? ' : "Don't have an account? "}
+          {isSignUp ? 'Har du allerede en konto? ' : 'Har du ikke en konto? '}
           <span className="toggle-link" onClick={toggleForm}>
-            {isSignUp ? 'Sign In' : 'Sign Up'}
+            {isSignUp ? 'Log ind' : 'Opret konto'}
           </span>
         </p>
       </div>
