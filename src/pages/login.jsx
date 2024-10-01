@@ -9,6 +9,7 @@ const Login = () => {
   };
 
   return (
+    <div className='bg'>
     <div className="login-container">
       <h1>{isSignUp ? 'Opret konto' : 'Log ind'}</h1>
       <form>
@@ -40,6 +41,7 @@ const Login = () => {
           </span>
         </p>
       </div>
+    </div>
     </div>
   );
 };
