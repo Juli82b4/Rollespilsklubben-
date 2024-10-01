@@ -5,13 +5,12 @@ import "./styles/kontakt.css"; // Import the CSS file for styling
 
 const Kontakt = () => {
   return (
-     <div className="gallery-whole-container">
+     <div className="kontakt-whole-container">
       <div className="banner">
         <h1>KONTAKT</h1>
       </div>
     <div className="contact-container">
-      <h1>Kontakt os</h1>
-      <br />
+           <br />
       <p>
         Hvis du har spørgsmål eller har brug for yderligere information, er du
         altid velkommen til at kontakte os. Vi ser frem til at høre fra dig!
