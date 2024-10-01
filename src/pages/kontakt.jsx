@@ -11,15 +11,16 @@ const Kontakt = () => {
       </div>
     <div className="contact-container">
            <br />
-      <p>
-        Hvis du har spørgsmål eller har brug for yderligere information, er du
-        altid velkommen til at kontakte os. Vi ser frem til at høre fra dig!
-      </p>
+      
 
       <div className="contact-info">
         <br />
         <h2>Kontaktinformation</h2>
         <br />
+        <p>
+        <b>Hvis du har spørgsmål eller har brug for yderligere information, er du
+        altid velkommen til at kontakte os. Vi ser frem til at høre fra dig!</b>
+      </p>
         <p>
           <strong>Adresse:</strong> Rollespilsklubben Excalibur, Kirkebækvej
           123, 8800 Viborg

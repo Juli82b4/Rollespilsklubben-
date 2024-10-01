@@ -9,9 +9,9 @@
 
 .contact-container {
   font-family: "Poppins";
-  max-width: 800px;
+  max-width: 1000px;
   text-align: left;
-  margin:auto;
+  margin: auto;
   padding: 40px;
   background-color: rgba(49, 167, 221, 0.818);
   border-radius: 15px;
