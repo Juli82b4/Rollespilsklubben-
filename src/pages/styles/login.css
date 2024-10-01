@@ -1,6 +1,5 @@
 /* Body Styles */
 body {
-    background-image: url(/src/img/viking.jpg); /* Background image for the entire page */
     background-size: cover; /* Ensures the background covers the entire screen */
     background-repeat: no-repeat; /* Prevent background image from repeating */
     margin: 0; /* Remove default body margin */
