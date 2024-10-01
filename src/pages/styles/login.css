@@ -9,7 +9,7 @@ body {
 .login-container {
     color: white; /* Text color */
     border: 2px solid black; /* Border around the container */
-    margin: 30px auto; /* Center the container with auto margins */
+    margin: 0px auto; /* Center the container with auto margins */
     text-align: center; /* Center text within the container */
     height: 430px; /* Fixed height for the container */
     width: 25%; /* Width of the container */
@@ -27,6 +27,12 @@ h1 {
     color: white; /* Heading color */
     font-size: 24px; /* Font size for the heading */
     margin-bottom: 1em; /* Margin below the heading */
+}
+
+.bg {
+    background-image: url(/src/img/BoD-Board.webp);
+    height: 100%;
+    padding: 1em;
 }
 
 /* Input Group Styles */
