@@ -1,82 +1,110 @@
 /* Body Styles */
 body {
-    background-size: cover; /* Ensures the background covers the entire screen */
-    background-repeat: no-repeat; /* Prevent background image from repeating */
-    margin: 0; /* Remove default body margin */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* Background container */
+.bg {
+    background-image: url(/src/img/BoD-Board.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 /* Login Container Styles */
 .login-container {
-    color: white; /* Text color */
-    border: 2px solid black; /* Border around the container */
-    margin: 30px auto; /* Center the container with auto margins */
-    text-align: center; /* Center text within the container */
-    height: 430px; /* Fixed height for the container */
-    width: 25%; /* Width of the container */
-    padding: 1.5em; /* Padding inside the container */
-    background-color: #260933; /* Background color of the container */
-    border-radius: 10px; /* Smooth rounded corners */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2); /* Permanent shadow effect */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Arrange children in a column */
-    justify-content: space-between; /* Distribute space between elements */
+    color: white;
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5em;
+    background-color: #260933;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Heading Styles */
 h1 {
-    color: white; /* Heading color */
-    font-size: 24px; /* Font size for the heading */
-    margin-bottom: 1em; /* Margin below the heading */
+    color: white;
+    font-size: 24px;
+    margin-bottom: 1em;
 }
 
 /* Input Group Styles */
 .input-group {
-    margin-bottom: 1em; /* Margin below each input group */
+    margin-bottom: 1em;
 }
 
 /* Label Styles */
 label {
-    display: block; /* Block display for labels */
-    margin-bottom: 0.5em; /* Margin below each label */
+    display: block;
+    margin-bottom: 0.5em;
 }
 
 /* Input Styles */
 input {
-    width: 100%; /* Full width for inputs */
-    padding: 0.6em; /* Padding inside inputs */
-    margin-bottom: 1em; /* Margin below inputs */
-    border: 1px solid #ccc; /* Border style for inputs */
-    border-radius: 5px; /* Rounded corners for inputs */
-    font-size: 16px; /* Font size for inputs */
+    width: 100%;
+    padding: 0.6em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 /* Submit Button Styles */
 .submit-btn {
-    width: 100%; /* Full width for the submit button */
-    padding: 0.8em; /* Padding inside the button */
-    background-color: #4CAF50; /* Background color for the button */
-    color: white; /* Text color for the button */
-    border: none; /* No border for the button */
-    border-radius: 5px; /* Rounded corners for the button */
-    font-size: 16px; /* Font size for the button */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%;
+    padding: 0.8em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 /* Submit Button Hover Effect */
 .submit-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
 }
 
 /* Signup Option Styles */
 .signup-option {
-    text-align: center; /* Centering the signup option text */
-    margin-top: 1em; /* Margin above the signup option text */
+    text-align: center;
+    margin-top: 1em;
 }
 
 /* Toggle Link Styles */
 .toggle-link {
-    color: #007BFF; /* Link color */
-    cursor: pointer; /* Pointer cursor for link */
-    text-decoration: underline; /* Underline for link */
-  
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .login-container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .login-container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-container {
+        width: 30%;
+    }
 }
