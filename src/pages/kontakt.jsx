@@ -6,7 +6,7 @@ import "./styles/kontakt.css"; // Import the CSS file for styling
 const Kontakt = () => {
   return (
      <div className="kontakt-whole-container">
-      <div className="banner">
+      <div className="kontakt-banner">
         <h1>KONTAKT</h1>
       </div>
     <div className="contact-container">

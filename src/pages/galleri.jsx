@@ -35,7 +35,7 @@ const Galleri = () => {
 
   return (
     <div className="gallery-whole-container">
-            <div className="banner">
+            <div className="gallery-banner">
         <h1>GALLERI</h1>
       </div>
     <div className="gallery">
