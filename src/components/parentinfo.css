@@ -17,7 +17,7 @@
 
 /* Popup box styling */
 .parent-popup {
-  background-color: white;
+
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,6 +27,8 @@
   cursor: auto;
   color: black;
   font-family: "Yatra One", system-ui;
+  background-color: rgb(226, 163, 17);
+  border: 5px solid #f2e4fd;
 }
 
 /* Close button styling */
