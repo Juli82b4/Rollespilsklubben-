@@ -5,7 +5,7 @@
 }
 
 html, body {
-  width: 100%; /* Make sure the body and html are 100% wide */
+  width: 100%; 
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
