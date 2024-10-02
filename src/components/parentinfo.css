@@ -27,8 +27,11 @@
   cursor: auto;
   color: black;
   font-family: "Yatra One", system-ui;
-  background-color: rgb(226, 163, 17);
+  background-color: rgb(203, 205, 191);
   border: 5px solid #f2e4fd;
+}
+.parent-popup h3{
+color: #dc3545;
 }
 
 /* Close button styling */

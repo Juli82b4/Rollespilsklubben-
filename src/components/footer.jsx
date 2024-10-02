@@ -8,7 +8,9 @@ const Footer = () => {
 
 
 <div className="copyright">
-<img className="logo-pic" src="/src/img/logo-.png" alt="" />
+<a href="/">
+          <img className="logo-pic" src="./src/img/logo.png" alt="logo" />
+        </a>
 <p>Copyright © 2023. All Rights Reserved by Rollespilsklubben.</p>
 </div>
 <div className="icons">
