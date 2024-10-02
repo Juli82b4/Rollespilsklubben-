@@ -1,14 +1,11 @@
 .pathway-container {
   width: 80%;
-  height:1000vh;
+  height: 1000vh;
   background-image: url("/src/img/new-pathway.jpg");
   background-repeat: repeat-y;
   background-position: center;
   position: relative;
   margin: 0 auto;
-  
-
-
 }
 
 .container-background {
@@ -39,14 +36,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px; 
+  height: 100px;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.5) 0%,
     rgba(0, 0, 0, 0) 100%
   );
-  z-index: 1; 
-  pointer-events: none; 
+  z-index: 1;
+  pointer-events: none;
 }
 
 .cs {
@@ -57,14 +54,6 @@
   padding: 5px;
   left: 690px;
   top: 190px;
-}
-
-.signboard-one {
-  width: 200px;
-  height: 200px;
-}
-.signboard {
-  left: 20%;
 }
 
 .signboard-one {
@@ -113,4 +102,80 @@
   position: relative;
   left: 55%;
   top: 191em;
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+  .pathway-container {
+    width: 90%;
+  }
+
+  .cs {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .signboard-one,
+  .signboard-two,
+  .signboard-three,
+  .signboard-four {
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .signboard-one {
+    top: 280em;
+  }
+
+  .signboard-two {
+    top: 85em;
+  }
+
+  .signboard-three {
+    top: 53em;
+  }
+
+  .signboard-four {
+    top: 190em;
+  }
+}
+
+@media (max-width: 480px) {
+  .pathway-container {
+    width: 95%;
+  }
+
+  .cs {
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .signboard-one,
+  .signboard-two,
+  .signboard-three,
+  .signboard-four {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .signboard-one {
+    top: 278em;
+  }
+
+  .signboard-two {
+    top: 83em;
+  }
+
+  .signboard-three {
+    top: 51em;
+  }
+
+  .signboard-four {
+    top: 188em;
+  }
 }
