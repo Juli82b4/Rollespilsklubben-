@@ -165,17 +165,21 @@
 
   .signboard-one {
     top: 278em;
+    left: 4em;
   }
 
   .signboard-two {
-    top: 83em;
+    top: 99em;
+    left: 4em;
   }
 
   .signboard-three {
-    top: 51em;
+    top: 49em;
+    left: 4em;
   }
 
   .signboard-four {
-    top: 188em;
+    top: 171em;
+    left: 4em;
   }
 }
