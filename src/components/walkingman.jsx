@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import walkingman from "../img/walkingman.png";
 import walkingmanOpp from "../img/walkingman-opp.png";

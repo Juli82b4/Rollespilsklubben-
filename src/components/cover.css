@@ -48,3 +48,34 @@
   height: 100%;
   border: none;
 }
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+  .cover {
+    padding: 5px;
+    padding-top: 10%;
+  }
+
+  .cover h1 {
+    font-size: 2.5em;
+  }
+
+  .cover h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .cover {
+    padding: 5px;
+    padding-top: 15%;
+  }
+
+  .cover h1 {
+    font-size: 2em;
+  }
+
+  .cover h2 {
+    font-size: 1em;
+  }
+}
