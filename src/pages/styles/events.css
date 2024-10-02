@@ -1,25 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-.events-whole-container {
-  background: linear-gradient(135deg, #24aeee, #61cad4);
-  background-size: 200% 200%;
-  animation: backgroundAnimation 70s linear infinite;
+
+
+.events-banner {
+  color: white;
+  height: 45em;
+  text-align: center;
+  background-image: url(/src/img/viking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  }
+
+
+.events-banner h1 {
+  font-size: 50px;
+  margin-bottom: 30%;
+  color:rgb(66, 17, 57);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
+  
+  animation: fadeInScale 1.5s ease-out forwards;
 }
+
+/* Keyframes for fade-in and scaling */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.events-whole-container {
+  background-color: #61cad4;
+  padding-bottom: 2em; 
+  font-family: "Poppins";
+}
+
 
 .events-container {
   color: #ffffff;
-  padding: 7em;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  margin: 40px auto;
   font-family: "Poppins";
-  background-color: #005f79;
+  padding: 5rem; 
+  border-radius: 15px;
+  background-color: #007f99;
+  margin: 20px auto;
   max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
 
 .events-container p {
   color: #d1f0f5;
 }
+
 
 .events-container h1 {
   font-size: 3rem;
@@ -40,6 +83,7 @@
   text-transform: uppercase;
 }
 
+
 .event-dates {
   list-style-type: none;
   padding: 0;
@@ -59,14 +103,16 @@
   background-color: #3da2b1;
 }
 
+
 .events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 40px;
   margin-top: 40px;
   padding: 40px;
   justify-content: center;
 }
+
 
 .grid-item {
   border-radius: 12px;
@@ -92,6 +138,7 @@
   font-weight: 700;
 }
 
+
 .grid-item p {
   color: #041a1a;
   font-size: 16px;
@@ -101,6 +148,7 @@
   margin-bottom: 8px;
   word-spacing: normal;
 }
+
 
 /* Mobile-friendly styles */
 @media (max-width: 768px) {

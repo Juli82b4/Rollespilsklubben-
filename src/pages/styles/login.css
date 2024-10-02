@@ -1,8 +1,10 @@
 /* Body Styles */
-body {
+html, body {
+    height: 100%; /* Make sure body takes full height */
+    margin: 0;
+    padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
 }
 
 /* Background container */
@@ -10,8 +12,12 @@ body {
     background-image: url(/src/img/BoD-Board.webp);
     display: flex;
     justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
     padding: 1em;
+    height: 100vh; /* Full height of viewport */
 }
 
 /* Login Container Styles */

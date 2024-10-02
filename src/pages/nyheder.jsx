@@ -5,7 +5,7 @@ const Nyheder = () => {
   return (
     <section>
       
-      <div className="banner">
+      <div className="nyheder-banner">
         <h1>NYHEDER</h1>
       </div>
 
