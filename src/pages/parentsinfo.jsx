@@ -4,7 +4,7 @@ import "./styles/parentsinfo.css";
 const ParentsInfo = () => {
   return (
     <div className="parents-whole-container">
-      <div class="parentsinfo-container">
+      <div className="parentsinfo-container">
         <h1>Forældreinfo</h1>
         <p>
           Når dit barn deltager til Excalibur Rollespil er det ikke meget

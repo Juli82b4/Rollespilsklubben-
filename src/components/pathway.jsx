@@ -1,29 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
 import "./pathway.css";
 
 const Pathway = () => {
   return (
     <div className="container-background">
-    <div className="pathway-container">
-      <div className="signboard">
-        <Link to="/events">
-          <div className="signboard-one" />
-        </Link>
+      <div className="pathway-container">
+        <div className="signboard">
+          <a href="/events">
+            <div className="signboard-one" />
+          </a>
 
-        <Link to="/nyheder">
-          <div className="signboard-two" />
-        </Link>
+          <a href="/nyheder">
+            <div className="signboard-two" />
+          </a>
 
-        <Link to="/kontakt">
-          <div className="signboard-three" />
-        </Link>
+          <a href="/kontakt">
+            <div className="signboard-three" />
+          </a>
 
-        <Link to="/galleri">
-          <div className="signboard-four" />
-        </Link>
+          <a href="/galleri">
+            <div className="signboard-four" />
+          </a>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

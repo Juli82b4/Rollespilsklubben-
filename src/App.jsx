@@ -23,7 +23,8 @@ import Loginpage from "./pages/login";
 function App() {
   const [isParentInfoVisible, setParentInfoVisible] = useState(false);
   const [isLoginVisible, setLoginVisible] = useState(false);
-  const isRootPage = window.location.pathname === "/" || window.location.pathname === "";
+  const pathname = window.location.pathname;
+  const isRootPage = pathname === "/" || pathname === "";
 
   const toggleParentInfo = () => {
     setParentInfoVisible(!isParentInfoVisible);
