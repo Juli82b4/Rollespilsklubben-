@@ -1,36 +1,35 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import walkingman from "../img/walkingman.png";
 import walkingmanOpp from "../img/walkingman-opp.png";
 import "./walkingman.css";
 
 const Walkingman = () => {
-  // Define the array of image sources
-  const imageArr = [
-    walkingman,
-    walkingmanOpp,
-  ];
-
   const [animationFrame, setAnimationFrame] = useState(0);
+  const imageArr = [walkingman, walkingmanOpp];
 
   useEffect(() => {
-    let previousScrollPosition = window.scrollY;
+    let intervalId;
+    const handleScroll = (event) => {
+      if (event.deltaY !== 0) {
+        if (intervalId) {
+          clearInterval(intervalId);
+        }
 
-    const intervalId = setInterval(() => {
-      const currentScrollPosition = window.scrollY;
-      setAnimationFrame((prevFrame) => {
-        const newFrame = currentScrollPosition > previousScrollPosition
-          ? (prevFrame + 1) % imageArr.length
-          : (prevFrame - 1 + imageArr.length) % imageArr.length;
-        previousScrollPosition = currentScrollPosition;
-        return newFrame;
-      });
-    }, 100); // Adjust the interval as needed
+        intervalId = setInterval(() => {
+          setAnimationFrame((prevFrame) => (prevFrame === 0 ? 1 : 0));
+        }, 100);
+      }
+    };
+
+    window.addEventListener("wheel", handleScroll);
 
     return () => {
-      clearInterval(intervalId);
+      window.removeEventListener("wheel", handleScroll);
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
     };
-  }, [imageArr.length]);
+  }, []);
 
   return (
     <>
