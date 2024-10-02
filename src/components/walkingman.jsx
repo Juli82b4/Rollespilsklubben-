@@ -14,7 +14,9 @@ const Walkingman = () => {
   const [animationFrame, setAnimationFrame] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
+    let previousScrollPosition = window.scrollY;
+
+    const intervalId = setInterval(() => {
       const currentScrollPosition = window.scrollY;
       setAnimationFrame((prevFrame) => {
         const newFrame = currentScrollPosition > previousScrollPosition
@@ -23,13 +25,10 @@ const Walkingman = () => {
         previousScrollPosition = currentScrollPosition;
         return newFrame;
       });
-    };
-
-    let previousScrollPosition = window.scrollY;
-    window.addEventListener('scroll', handleScroll);
+    }, 100); // Adjust the interval as needed
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      clearInterval(intervalId);
     };
   }, [imageArr.length]);
 
