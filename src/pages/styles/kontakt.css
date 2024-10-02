@@ -1,25 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* Main Banner */
+.kontakt-banner {
+  color: white;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  background-image: url(/src/img/viking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.kontakt-banner h1 {
+  font-size: 50px;
+  margin-bottom: 30%;
+  color: rgb(66, 17, 57);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeInScale 1.5s ease-out forwards;
+}
+
+/* Whole Container */
 .kontakt-whole-container {
   background-color: #f0f0f0;
   background: linear-gradient(#24aeeeff, rgba(97, 202, 212, 0.5)),
     url("/src/img/water.jpeg");
   background-size: cover;
+  background-position: center;
   animation: backgroundAnimation 70s linear infinite;
-  margin: auto;
+  margin: 0 auto;
+  padding-bottom: 0;
 }
 
+/* Contact Container */
 .contact-container {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   max-width: 1000px;
   text-align: left;
-  margin: auto;
+  margin: 30px auto;
   padding: 40px;
   background-color: rgba(49, 167, 221, 0.818);
   border-radius: 15px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-h1,
-h2 {
+h1, h2 {
   color: #333;
   font-weight: 600;
 }
@@ -51,8 +79,7 @@ p {
   text-align: left;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   margin-bottom: 15px;
   padding: 12px;
   width: 100%;
@@ -62,8 +89,7 @@ p {
   transition: border-color 0.3s ease;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
   border-color: #2621b0;
   outline: none;
 }
@@ -89,3 +115,4 @@ p {
   background-color: #5b1d74;
   transform: scale(1.05);
 }
+
